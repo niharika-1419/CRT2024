@@ -1,0 +1,10 @@
+int main() {
+    int w,a,c;
+    scanf("%d%d%d",&w,&a,&c);
+    int t=a*75+c*30;
+    if(t<=w)
+        printf("Boat is stable");
+    else
+        printf("Boat will drown");
+    return 0;
+}
