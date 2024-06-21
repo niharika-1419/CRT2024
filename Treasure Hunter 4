@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+            int a=s.nextInt();
+        int b=s.nextInt();
+        int c=s.nextInt();
+        int Longben=a*b/100;
+        int Blackbread=(a-Longben)*c/100;
+        int Other=(a-Longben-Blackbread)/3;
+        System.out.printf("%d\n%d\n%d\n",Longben,Blackbread,Other);
+        
+    }
+        
+}  
