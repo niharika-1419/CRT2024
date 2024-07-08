@@ -1,0 +1,44 @@
+import java.util.*;
+class Father
+{
+   String fname;
+int P1;
+void getFather(String fname,int P1)
+{
+this.fname=fname;
+this.P1=P1;
+}
+void showFather()
+{
+System.out.println("Father name="+fname);
+ System.out.println("Father property="+P1);
+}
+}
+class Daughter extends Father
+{
+String dname;
+int P2;
+void getDaughter(String dname,int P2)
+{
+this.dname=dname;
+this.P2=P2;
+}
+void showDaughter()
+{
+System.out.println("Daughter name="+dname);
+System.out.println("Daguther Property="+P2);
+System.out.println("Daguther Total Property="+(P1+P2));
+}
+}
+class Test
+{
+public static void main(String[] args)
+{
+Daughter d1=new Daughter();
+d1.getFather("rrr",200000);
+d1.showFather();
+d1.getDaughter("ccc",300000);
+d1.showDaughter();
+}
+}
+
