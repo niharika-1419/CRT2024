@@ -1,0 +1,41 @@
+class Sample
+{
+    int a,b;
+    void get(int a,int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    void show()
+    {
+       System.out.println("a=" +a+ "b="+b);  
+    }
+}
+class Addition extends Sample
+{
+    void total()
+    {
+         System.out.println("Addition="+(a+b));
+    }
+}
+class Product extends Sample
+{
+    void multiply()
+    {
+         System.out.println("multiply="+(a*b));
+    }
+}
+class Test
+{
+    public static void main(String[] args) 
+    {
+        Addition a1=new Addition();
+        a1.get(234,345);
+        a1.show();
+        a1.total();
+        Product P1=new Product();
+        P1.get(23,64);
+        P1.show();
+        P1.multiply();
+        }
+}
