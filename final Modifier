@@ -1,0 +1,11 @@
+class Test
+{
+final int a=111;
+public static void main(String args[])
+{
+Test t1=new Test();
+System.out.println(t1.a);
+//t1.a=382;
+//System.out.println(t1.a);
+}
+}
