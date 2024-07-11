@@ -1,0 +1,29 @@
+nterface inter1
+{
+void m1();
+}
+interface inter2
+{
+void m2();
+}
+class First implements inter1,inter2
+{
+public void m1()
+{
+System.out.println("m1 method in interface1");
+}
+public void m2()
+{
+System.out.println("m2 method in interface2");
+}
+}
+class Test
+{
+public static void main(String[]args)
+{
+  First f1=new First();
+f1.m1();
+f1.m2();
+}
+}
+
