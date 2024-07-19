@@ -1,0 +1,35 @@
+class A extends Thread
+{
+
+}
+class B extends Thread
+{
+
+}
+class C extends Thread
+{
+
+}
+class Test
+{
+public static void main(String args[])
+{
+A a1=new A();
+a1.start();
+B b1=new B();
+b1.start();
+C c1=new C();
+c1.start();
+
+System.out.println(Thread.currentThread().getName());
+System.out.println(a1.getName());
+System.out.println(b1.getName());
+System.out.println(c1.getName());
+a1.setName("Kola");
+System.out.println(a1.getName());
+b1.setName("Nirmala");
+System.out.println(b1.getName());
+c1.setName("Sanju");
+System.out.println(c1.getName());
+}
+}
